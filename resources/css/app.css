@@ -7,6 +7,7 @@
     /* Colors */
     --color-*: initial;
 
+    --color-white: hsl(0, 0%, 100%);
     --color-red: hsl(14, 86%, 42%);
     --color-green: hsl(159, 69%, 38%);
 
