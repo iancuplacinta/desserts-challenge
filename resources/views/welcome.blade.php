@@ -25,6 +25,6 @@
         </ul>
     </main>
     
-    <aside class="bg-white p-6 h-80">Shopping Cart</aside>
+    <x-cart :cart="$cart" />
 </body>
 </html>
