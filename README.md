@@ -11,4 +11,6 @@ Such as the one controller handling all of the different actions. Not using JS. 
 ## The goal of the project
 To create a product list that you can add to cart and increase / decrease the quantity of each product.
 
+Much of the challenge is to match the design style to the given images from the challenge. Used tailwind for the css.
+
 We also have a modal confirmation screen.
