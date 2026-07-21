@@ -35,5 +35,7 @@
         <p>This is a <span class="font-bold">carbon-neutral</span> delivery</p>
     </div>
 
-    <button class="text-white bg-red rounded-full px-6 py-4">Confirm Order</button>
+    <button popovertarget="order-confirmation" class="text-white bg-red rounded-full px-6 py-4">Confirm Order</button>
+
+    <x-cart.confirmation :cart="$cart" />
 </div>
