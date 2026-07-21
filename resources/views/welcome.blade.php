@@ -15,7 +15,7 @@
 </head>
 <body class="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-[1fr_400px] gap-8 bg-rose-50 py-16">
     <main>
-        <h1 class="text-5xl font-bold">Desserts</h1>
+        <h1 class="text-5xl font-bold text-rose-900">Desserts</h1>
 
         <ul class="mt-8 grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             @foreach($products as $product)

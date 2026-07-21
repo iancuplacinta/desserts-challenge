@@ -10,6 +10,7 @@
     --color-white: hsl(0, 0%, 100%);
     --color-black: hsl(0, 0%, 0%);
     --color-red: hsl(14, 86%, 42%);
+    --color-red-dark: color-mix(in srgb, var(--color-red) 70%, var(--color-black) 30%);
     --color-green: hsl(159, 69%, 38%);
 
     --color-rose-50: hsl(20, 50%, 98%);

@@ -17,8 +17,8 @@
                     @csrf
                     @method('DELETE')
 
-                    <button class="border border-rose-400 rounded-full p-0.75">
-                        <x-icons.delete class="size-3 text-rose-400 hover:text-red" />
+                    <button class="border border-rose-400 rounded-full p-0.75 group hover:border-red cursor-pointer">
+                        <x-icons.delete class="size-3 text-rose-400 group-hover:text-red" />
                     </button>
                 </form>
             </li>
@@ -35,7 +35,7 @@
         <p>This is a <span class="font-bold">carbon-neutral</span> delivery</p>
     </div>
 
-    <button popovertarget="order-confirmation" class="text-white bg-red rounded-full px-6 py-4">Confirm Order</button>
+    <button popovertarget="order-confirmation" class="text-white bg-red hover:bg-red-dark cursor-pointer transition rounded-full px-6 py-4">Confirm Order</button>
 
     <x-cart.confirmation :cart="$cart" />
 </div>
