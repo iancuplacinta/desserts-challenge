@@ -3,7 +3,7 @@
 <li>
     <article>
         <img class="aspect-square object-cover rounded-xl" src="{{ Vite::asset('resources/images/' . $product->image) }}" alt="Photo of {{ $product->name }}">
-        <form style="--button-height: 3rem" action="" method="POST" class="flex justify-center -mt-[calc(var(--button-height)/2)]">
+        <form style="--button-height: 3rem" action="{{ route('cart.addOne', $product) }}" method="POST" class="flex justify-center -mt-[calc(var(--button-height)/2)]">
             @csrf
 
             <button class="bg-white border border-rose-500 rounded-full px-8 h-(--button-height) font-medium flex gap-2 items-center hover:border-red hover:text-red"
