@@ -12,9 +12,15 @@
                         <span class="font-medium text-rose-500">{{ $item->formattedTotal() }}</span>
                     </div>
                 </div>
-                <button class="border border-rose-400 rounded-full p-0.75">
-                    <x-icons.delete class="size-3 text-rose-400 hover:text-red" />
-                </button>
+
+                <form action="{{ route('cart.removeAll', $item) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+
+                    <button class="border border-rose-400 rounded-full p-0.75">
+                        <x-icons.delete class="size-3 text-rose-400 hover:text-red" />
+                    </button>
+                </form>
             </li>
         @endforeach
     </ul>
