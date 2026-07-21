@@ -13,3 +13,5 @@ Route::get('/', function () {
 });
 
 Route::post('/cart/{product}', [CartController::class, 'addOne'])->name('cart.addOne');
+Route::patch('/cart/{product}', [CartController::class, 'removeOne'])->name('cart.removeOne');
+Route::delete('/car/{cartItem}', [CartController::class, 'removeAll'])->name('cart.removeAll');

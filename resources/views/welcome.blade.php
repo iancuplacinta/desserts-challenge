@@ -19,7 +19,7 @@
 
         <ul class="mt-8 grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             @foreach($products as $product)
-                <x-product :product="$product"/>
+                <x-product :product="$product" :cart="$cart" />
             @endforeach
 
         </ul>
